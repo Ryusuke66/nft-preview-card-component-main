@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    font-family: 'Outfit';
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    border-radius: 20px;
+    width: 350px;
+    overflow: hidden;
+    box-shadow: 0px 30px 15px 20px hsl(217deg 55% 10%);
+}
+
+.cardtop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/image-equilibrium.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.cardtop:hover, .header:hover, .name:hover {
+    cursor: pointer;
+}
+
+.cardtop:hover .view {
+    opacity: 1;
+}
+
+.cardtop .view {
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: .2s;
+}
+
+.cardtop img {
+    width: 50px;
+}
+
+.cardbottom {
+    color: hsl(215, 51%, 70%);
+    margin-top: 20px;
+}
+
+.header {
+    color: hsl(0, 0%, 100%);
+    font-size: 24px;
+}
+
+.header:hover, .credit .name:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.desc {
+    margin:20px 0;
+    line-height: 1.6;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    justify-content: center;
+}
+
+.price img {
+    margin-right: 5px;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time img {
+    margin-right: 8px;
+}
+
+hr {
+    background-color: hsl(215, 32%, 27%);
+    height: 1px;
+    border: none;
+    margin: 30px 0 10px;
+}
+
+.credit {
+    display: flex;
+    align-items: center;
+}
+
+.credit img {
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.credit .name {
+    color: white;
+    margin-left: 5px;
+}
+
+.attribution {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: -40px;
+    transition: .2s;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container:hover + .attribution, .attribution:hover{
+    bottom: 0;
+}
